@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<!------------------------HEADER----------------------------->
+    <header class="pb-[70px]">
+        <!------------------------NAVBAR----------------------------->
+        <nav class="flex justify-between h-[70px] bg-blue-50 text-black items-center fixed px-10 w-full z-[1]">
+            <div>
+                <span class="text-xl font-bold cursor-pointer bg-gradient-to-r from-[#5c5ced] via-black to-[#0c399a] text-transparent bg-clip-text">Aqua Serene</span>
+            </div>
+            <div>
+                <ul class="hidden md:flex gap-10">
+                    <li class="cursor-pointer hover:text-blue-700 font-mono font-semibold"><a href="#home">HOME</a></li>
+                    <li class="cursor-pointer hover:text-blue-700 font-mono font-semibold"><a href="#activities">ACTIVITIES</a></li>
+                    <li class="cursor-pointer hover:text-blue-700 font-mono font-semibold"><a href="#about">ABOUT</a></li>
+                    <li class="cursor-pointer hover:text-blue-700 font-mono font-semibold"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <div >
+                <button class="hidden md:inline bg-blue-600 py-2 px-4 rounded-lg text-white font-bold hover:bg-blue-800">Reservation</button>
+                <img class="size-6 inline md:hidden" src="Assets/Images/icons8-menu-hamburger-24.png" alt="">
+            </div>
+        </nav>
+    </header>
+<!------------------------HERO SECTION----------------------------->
+    <section id="home" class="h-[calc(100vh-70px)] flex">
+        <div class=" h-72 absolute flex flex-col pt-40 px-5 sm:px-20 sm:pt-10 md:mt-0 lg:mt-40 xl:mt-28">
+            <span class="text-4xl sm:text-6xl font-bold mb-5 bg-gradient-to-r from-[#5c5ced] via-black to-[#0c399a] text-transparent bg-clip-text md:text-8xl lg:text-9xl">Aqua Serene</span>
+            <div class="text-sm border-l-4 border-l-blue-700 h-16">
+                <p class="text-[13px] md:text-sm text-white font-bold pl-3 md:w-96">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus quidem quo aliquid autem? Maiores quaerat facere sint voluptatum. Animi, ad!
+                </p>
+                <div class="flex mt-5 gap-4 ">
+                    <button class=" hover:bg-blue-800 bg-blue-700 py-3 px-6 rounded-lg text-white font-medium border-2 border-white">Read More</button>
+                    <button class=" hover:bg-blue-200 bg-blue-100 py-3 px-3 rounded-lg text-black font-semibold border-2 border-black">Available dates</button>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <video class=" absolute z-[-1] h-[calc(100vh-70px)]  w-full object-cover object-center" autoplay loop muted src="Assets/Vidéos/hero-section2.mp4"></video>
+        </div>
+    </section>
+<!------------------------MAIN----------------------------->
+    <main>
+        <!------------------------ACTIVITIES SECTION----------------------------->
+        <section id="activities" class="flex flex-col items-center justify-center mb-28 md:mt-16">
+            <div class="flex flex-col text-center w-[330px] h-[500px] rounded-lg bg-slate-100 border shadow-lg shadow-slate-400 items-center justify-center px-5 py-1 my-10 md:w-[600px] md:h-[350px] xl:w-[900px] xl:h-[300px]">
+                <h2 class=" text-blue-900 text-xl mb-5 font-semibold">
+                    A sanctuary of escape <br> to help people reset themeselves
+                </h2>
+                <hr class="w-20 mb-10 ">
+                <p class="text-gray-500">
+                    A luxury yoga, fitness & wellbeing holiday, focusing on your health in Mind, Body and Skin. Remember to take care of yourself, you cannot pour from an empty cup. Harmonize your body, mind & soul with yoga. Take yoga beyond the Mat Training. Do your practice and peace will come.
+                </p>
+            </div>
+            <div class="flex flex-col items-center justify-center xl:mt-10">
+                <h2 class=" text-blue-900 text-2xl mb-5 font-semibold">
+                    Retreats Coming
+                </h2>
+                <hr class="w-20 mb-10 ">
+                <div class="flex flex-col justify-center gap-10 lg:items-center xl:flex-row ">
+                    <div class="lg:flex gap-20 mb-20 xl:mb-0 xl:gap-10">
+                        <div class="h-[530px] w-80 flex flex-col text-center items-center">
+                        <img class="mb-10 rounded-xl" src="Assets/Images/retreats-1.jpg" alt="">
+                        <h2 class="text-xl text-blue-900 font-semibold mb-3">
+                                YOGA & FITNESS
+                            </h2>
+                        <h3 class="text-gray-500 mb-2">
+                                FEBRUARY 2025
+                            </h3>
+                        <p class="w-60 text-gray-500 mb-10 ">
+                                Always control what goes inside. Just balance your mind and body with Yoga. Create the healthy living for yourself.
+                        </p>
+                        <button class="hover:bg-blue-600 hover:border-white bg-gray-500 px-6 py-2 rounded-xl text-white font-semibold border-2 border-slate-400">LEARN MORE</button>
+                        </div>
+                        <div class="h-[530px] w-80 flex flex-col text-center items-center ">
+                            <img class="mb-10 rounded-xl" src="Assets/Images/retreats-2.jpg" alt="">
+                            <h2 class="text-xl text-blue-900 font-semibold mb-3">                             
+                                HERBAL MEDICINE
+                            </h2>
+                            <h3 class="text-gray-500 mb-2">
+                                APRIL 2025
+                            </h3>
+                            <p class="w-64 text-gray-500 mb-10 ">
+                                The practice of naturopathic medicine includes modern, traditional, scientific, and empirical methods. Come for a healthy life.
+                            </p>
+                            <button class="hover:bg-blue-600 hover:border-white bg-gray-500 px-6 py-2 rounded-xl text-white font-semibold border-2 border-slate-400">LEARN MORE</button>
+                        </div>
+                    </div>
+                     <div class="h-[530px] w-80 flex flex-col text-center items-center">
+                        <img class="mb-10 rounded-xl" src="Assets/Images/retreats-3.jpg" alt="">
+                        <h2 class="text-xl text-blue-900 font-semibold mb-3">
+                            GUIDED SURFING TRIP
+                         </h2>
+                        <h3 class="text-gray-500 mb-2">
+                            JULY 2025
+                         </h3>
+                        <p class="w-64 text-gray-500 mb-10 ">
+                            Free your inner adventure with guided surfing trip. Enjoy the thrill, take the challenge and refresh your mind in the sea.
+                        </p>
+                        <button class=" hover:bg-blue-600 hover:border-white bg-gray-500 px-6 py-2 rounded-xl text-white font-semibold border-2 border-slate-400">LEARN MORE</button>
+                     </div>                  
+                </div>
+            </div>
+        </section>
+        <!------------------------ABOUT SECTION----------------------------->
+        <section id="about" class=" h-[600px] w-full bg-[url(Assets/Images/section2b.jpg)] bg-cover object-center bg-no-repeat items-center flex bg-fixed">
+            <div class="flex h-[450px] flex-col items-center justify-center text-center px-5 xl:w-[550px] xl:ml-24 xl:px-0">
+                <h2 class="text-white text-center text-2xl mb-10 xl:text-5xl">
+                    Rest & Relax
+                </h2>
+                <p class="mb-10 text-gray-300 md:px-20 ">
+                    When all the world appears to be in a tumult, and nature itself is feeling the assault of climate change, the seasons retain their essential rhythm. Discover the world you've never seen, explore the horizon you never reached, unravel the mystry of nature. Reserve your life changing adventurous journey today with Nirvana along with Spa, Yoga and more healthy retreats.
+                </p>
+                <button class=" hover:bg-blue-700 border-2 border-white py-3 px-10 rounded-xl font-bold text-white bg-blue-900">
+                    Inquire
+                </button>
+            </div>
+        </section>
+
+        <section class="flex flex-col items-center bg-gradient-to-r from-slate-400 to-white pt-20 pb-20 ">
+            <h2 class=" text-blue-900 text-2xl mb-5 font-semibold flex items-center">
+                Testimonials
+            </h2>
+            <hr class="w-20 mt-2 mb-10">
+            <div class=" px-1">
+                <div class="border-l-2 border-slate-300 flex flex-col items-center text-center mb-16 lg:flex lg:flex-row lg:text-left lg:ml-10 lg:pl-5 xl:pl-10 xl:mb-2">
+                    <img class="size-40 rounded-full object-cover border-4 border-x-white" src="Assets/Images/testimony1.jpg" alt="">
+                    <div class="flex flex-col justify-center ml-5">
+                        <p class=" my-5 w-[300px] text-black lg:w-[600px]">
+                            We live in a wonderful world that is full of beauty, charm and adventure. There is no end to the adventures that we can have if only we seek them with our eyes open.
+                        </p>
+                        <span class="text-blue-600">
+                            Alessia Meli
+                        </span>
+                        <span class="text-slate-900">
+                            
+                            Pharmacist
+                        </span>
+                    </div>
+                </div>
+                <div class="hidden lg:flex lg:mr-20 ">
+                    <div class="flex flex-col justify-center items-end w-[900px] text-right mr-5 xl:pr-10">
+                        <p class=" mb-5 w-[600px] text-black">
+                            Change is not something that we should fear. Rather, it is something that we should welcome. For without change, nothing in this world would ever grow or blossom.
+                        </p>
+                        <span class="text-blue-600">
+                            Franck Emmanuel
+                        </span>
+                        <span class="text-black">
+                            Front End Developper
+                        </span>
+                    </div>
+                    <img class="size-44 rounded-full object-cover border-4 border-x-white" src="Assets/Images/testimony2.jpg" alt="">
+                </div>
+                <div class="border-r-2 border-slate-300 flex flex-col items-center text-center lg:hidden">
+                    <img class="size-40 rounded-full object-cover border-4 border-x-white" src="Assets/Images/testimony2.jpg" alt="">
+                    <div class="flex flex-col justify-center ml-5">
+                        <p class=" my-5 w-[300px] text-black">
+                            Change is not something that we should fear. Rather, it is something that we should welcome. For without change, nothing in this world would ever grow or blossom.
+                        </p>
+                        <span class="text-blue-600">
+                            Franck Emmanuel
+                        </span>
+                        <span class="text-slate-900">
+                            Front End Developper
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class=" h-[1800px] w-full bg-[url(Assets/Images/section4-bg.jpg)] bg-cover object-center bg-no-repeat bg-center items-center px-11 flex flex-col md:h-[1100px] lg:justify-center lg:h-[900px]">
+            <h2 class=" text-white text-2xl mt-14 mb-5 font-semibold text-center font-sans lg:mt-0" >
+                The place to be
+            </h2>
+            <hr class="w-20 mb-20 ">
+            <div class="md:grid grid-cols-2 gap-y-3 lg:grid-cols-3 lg:gap-16">
+                <img class="size-64 border-2 border-white cursor-pointer hover:opacity-50 hover:transition-opacity object-cover object-center " src="Assets/Images/location2.jpg" alt="">
+                <img class="size-64 border-2 border-white cursor-pointer hover:opacity-50 hover:transition-opacity mb-5 -mt-5 ml-5 object-cover object-center lg:ml-0" src="Assets/Images/location6.jpg" alt="">
+                <img class="size-64 border-2 border-white cursor-pointer hover:opacity-50 hover:transition-opacity object-cover object-center" src="Assets/Images/location1.jpg" alt="">
+                <img class="size-64 border-2 border-white cursor-pointer hover:opacity-50 hover:transition-opacity mb-5 -mt-5 ml-5 object-cover object-center lg:ml-0" src="Assets/Images/location4.jpg" alt="">
+                <img class="size-64 border-2 border-white cursor-pointer hover:opacity-50 hover:transition-opacity object-cover object-center" src="Assets/Images/location3.jpg" alt="">
+                <img class="size-64 border-2 border-white cursor-pointer hover:opacity-50 hover:transition-opacity mb-5 -mt-5 ml-5 object-cover object-center lg:ml-0" src="Assets/Images/location5.jpg" alt="">
+            </div>
+        </section>
+        <!------------------------CONTACT SECTION----------------------------->
+        <section id="contact" class="flex flex-col justify-center items-center bg-gradient-to-r from-slate-400 to-white pb-20">
+            <div class="h-[350px] flex flex-col mt-10 items-center">
+                <h3 class="mb-10 text-blue-900 text-xl font-semibold">
+                    Send us a message :
+                </h3>
+                <div class="flex items-center gap-3">
+                    <input class="rounded-[4px] border-2 w-[152px] border-black p-2 lg:w-[244px]" type="text" placeholder="Name">
+                    <input class="rounded-[4px] border-2 w-[152px] border-black p-2 lg:w-[244px]" type="text" placeholder="Email">
+                </div>
+                <textarea class="rounded-[4px] border-2 border-black p-2 m-3 lg:w-[500px]"  name="message" cols="40" rows="5" placeholder="Your message"></textarea>
+                <button class=" bg-blue-700 text-white font-semibold py-2 px-5 rounded-lg hover:bg-blue-800">Send Message</button>
+            </div>
+            <div class="text-center font-semibold mb-10">
+                <div class="text-blue-900 text-xl mb-5">
+                    <h2>Contact</h2>
+                </div>                    
+                <div>
+                    <p>Chicago, US</p>
+                </div>
+                <div>
+                    <p>Phone: +00 151525</p>
+                </div>
+                <div>
+                    <p>Email: franck@bimoulè.com</p>
+                </div>
+            </div>
+
+            <div >
+                <div class="flex items-center justify-center">
+                    <iframe class="h-64 px-5 w-96 md:w-[550px] lg:w-[800px] " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10126.620850491967!2d9.11855031004244!3d45.47846378289964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1909e7fc017%3A0x54993b230b18a111!2sSan%20Siro%2C%20Milano%20MI!5e1!3m2!1sit!2sit!4v1709811936053!5m2!1sit!2sit" width="1500" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>    
+            </div>  
+        </section>
+    </main>
+<!------------------------FOOTER---------------------------->
+    <footer>
+        <section class="h-[500px]">
+            <div class="h-[500px] absolute w-full flex flex-col items-center justify-center">
+                    <div class="flex flex-col mb-16">
+                        <span class=" mb-5  text-xl font-bold cursor-pointer bg-gradient-to-r from-[#5c5ced] to-white text-transparent bg-clip-text">Aqua Serene</span>
+                        <div class="flex items-center gap-2 justify-center">
+                            <img class="size-5 cursor-pointer hover:opacity-50" src="Assets/Images/icons8-facebook-entouré-48.png" alt="" srcset="">
+                            <img class="size-5 cursor-pointer hover:opacity-50" src="Assets/Images/icons8-lecture-de-youtube-48.png" alt="">
+                            <img class="size-5 cursor-pointer hover:opacity-50" src="Assets/Images/icons8-instagram-48.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center mb-5">
+                        <input class="outline-none px-10 py-4 mb-5 rounded-md" type="text" placeholder="Enter Email Here">
+                        <button class="bg-gradient-to-r from-[#aeaef7] to-white w-28 py-1 rounded-md mb-10 hover:opacity-50">SUBMIT</button>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="text-[14px] text-slate-400">POWERED BY <u>Franck Emmanuel D</u></span>
+                        <span class="text-[14px] text-slate-400">Copyright @2024</span>
+                    </div>
+            </div>
+            <div class="">
+                <video class=" absolute z-[-1] h-[500px]  w-full object-cover object-center" autoplay loop muted src="Assets/Vidéos/footer2.mp4"></video>
+            </div>
+        </section>  
+    </footer>  
+
+    
+</body>
+</html>
